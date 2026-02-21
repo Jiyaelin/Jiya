@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jiya Elin Philip | Software Tester</title>
+
+<style>
+:root {
+    --primary: #5c6cff;
+    --bg: #f6f8fc;
+    --white: #ffffff;
+    --text: #2d2d2d;
+    --light-text: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: var(--white);
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* Hero Section */
+.hero {
+    padding: 110px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+}
+
+.hero span {
+    color: var(--primary);
+}
+
+.hero p {
+    color: var(--light-text);
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+/* About */
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.about-content img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.about-content p {
+    max-width: 500px;
+    color: var(--light-text);
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: var(--light-text);
+    font-size: 0.95rem;
+}
+
+/* Contact */
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: var(--white);
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <h1>Jiya Elin Philip</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="container">
+        <h2>Hello, I'm <span>Jiya Elin Philip</span></h2>
+        <p>
+            A detail-oriented <strong>Software Tester</strong> passionate about ensuring quality, 
+            reliability, and seamless user experiences through thorough testing and analysis.
+        </p>
+        <a href="#projects" class="btn">View My Projects</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <img src="https://via.placeholder.com/200" alt="Profile Image">
+            <p>
+                I am a dedicated Software Tester with strong analytical skills and a keen eye for detail. 
+                I specialize in manual and functional testing, identifying bugs, improving usability, 
+                and ensuring software meets high-quality standards before release.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Web Application Testing</h3>
+                <p>Performed functional and regression testing for a responsive web application to ensure cross-browser compatibility.</p>
+            </div>
+            <div class="project-card">
+                <h3>Test Case Design</h3>
+                <p>Designed detailed test cases and executed test scenarios to validate system requirements and improve coverage.</p>
+            </div>
+            <div class="project-card">
+                <h3>Bug Tracking & Reporting</h3>
+                <p>Identified, documented, and tracked defects using bug tracking tools to ensure timely issue resolution.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 Jiya Elin Philip. All Rights Reserved.
+</footer>
+
+</body>
+</html>
